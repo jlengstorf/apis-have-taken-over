@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>APIs Have Taken Over &mdash; Jason Lengstorf, Copter Labs</title>
+
+    <meta name="description" content="APIs are everywhere. Here's how to leverage them to improve your business.">
+    <meta name="author" content="Jason Lengstorf">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme/copter.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6102252/625342/css/fonts.css" />
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section data-markdown>
+            <script type="text/template">
+                # How APIs Have Taken Over
+                ### (Even Though Your Mom&rsquo;s Never Heard of Them)
+
+                <small>Presented by [Jason Lengstorf](http://lengstorf.com) of [Copter Labs](http://www.copterlabs.com)</small>
+
+                <small>Twitter: [@jlengstorf](https://twitter.com/jlengstorf) | Email: [jason@copterlabs.com](mailto:jason@copterlabs.com)
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Pick an App
+
+                Note: Uber uses SendGrid to send email. Instagram uses the Facebook Places API (formerly Foursquare) for location sharing. Pretty much every app sending SMS uses Twilio. These are all examples of APIs silently powering the web.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="url(img/empire-of-the-ants.jpg)" -->
+                ## I, for One, Welcome Our New Robot Overlords
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="url(img/jason-lengstorf.jpg)" class="push-right" -->
+
+                ## A Little Background
+
+                * I&rsquo;m the founder of Copter Labs <!-- .element: class="fragment" -->
+                * I&rsquo;ve been pixel pushing since 2003 <!-- .element: class="fragment" -->
+                * I&rsquo;ve written 3 books on web development <!-- .element: class="fragment" -->
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # What Happened?
+
+                Note: How did we get here? Has the web always been powered by third-party services?
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="url(img/moar.jpg)" -->
+
+                Note: In order to be competitive, apps and services need to offer more and more features. (Yes, I know there are a lot of apps that are trying to do one thing and do it well — those are the services secretly powering the web.)
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## We Need to Be Fast
+
+                Note: Getting an idea to market quickly can be the difference between becoming a breakout product or a copycat.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Time Is Limited
+
+                Note: We don&rsquo;t have the time or resources to build out all the requested features while still remaining fast.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## This Stuff Is Hard
+
+                Note: Building a reliable email delivery service is hard. Building an SMS delivery service is hard. Massively scaling applications is hard.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # The Solution?
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## It&rsquo;s All Been Done Before
+
+                Note: Most of the services we need to build a feature already exist.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## For Free
+
+                Note: Foursquare, Google Maps, Facebook, Twitter
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Or Cheap
+                ### (Relatively Speaking)
+
+                Note: Twilio, Pusher, AWS, Heroku, Stripe
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## And It&rsquo;s Invisible to the User
+
+                Note: No one will know the difference between an in-house solution and a third-party service (except that the third-party service will probably be more reliable).
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # Why It&rsquo;s a Good Idea
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## It&rsquo;s Already Built
+
+                Note: The work has already been done. It&rsquo;s already tested.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## It&rsquo;s Actively Maintained
+
+                Note: There&rsquo;s a whole team dedicated to maintaining the service. This is their business model, so you know uptime and reliability are really the only things they have going for their reputation.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## It&rsquo;s Cheaper
+
+                Note: Twilio costs $0.0075 per message. At 1,000,000 messages sent per month, it costs $90,000/year. The average salary for a senior developer is around $100,000/year, and maintaining a service with that kind of volume is probably more than a one-person job.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## It Frees Up Resources for Mission-Critical Tasks
+
+                Note: When you remove the need to maintain auxiliary services, you can focus on big business goals instead.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## The Result?
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="url(img/scrooge-mcduck.gif)" -->
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # Why It Might Be a Bad Idea
+                ## (But Probably Not)
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## It&rsquo;s Out of Your Control 
+
+                Note: Third-party services can go down. They can undergo emergency maintenance. Shit happens. But that can happen with an in-house solution as well (and — honestly — that&rsquo;s probably more likely).
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## It Could Pull a Google Reader
+
+                Note: Tech companies are always being purchased, changing offerings, or just running out of money. It falls on your judgment to choose services that show stability. Using a service that has lots of big-name clients is a good indication that you&rsquo;ll probably be fine.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # Part II: How to Dominate
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## You Have a Unique Offering
+
+                Note: Something you do is unique and useful. People want it. That&rsquo;s why you&rsquo;re in business. It could be the data you collect; it could be the way you process certain data; it could be that you&rsquo;ve solved a problem that has an application beyond the scope of how you use it.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Other Businesses Could Benefit from Using It
+
+                Note: Other businesses would be able to improve their products by integrating your unique offering.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## You Could Benefit from Seeing Other Use Cases
+
+                Note: Flickr used to be an online game with a photo sharing component. Facebook used to be a Hot or Not clone. Instagram was a check-in app. Seeing how people use the service shows you where the interest lies, and opening the service up to developers accelerates your ability to see how people use the data.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Businesses Live and Die by the Developer Community
+
+                Note: Developers are the web&rsquo;s tastemakers. If they pick up a service and run with it, it will most likely become pervasive: Twitter, Foursquare, etc. are good examples.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## There&rsquo;s Gold in Them There APIs
+
+                Note: You can monetize your service, especially if it solves a common business challenge. Twilio is a fantastic example of a company that was founded exclusively to be a service — there is no public-facing Twilio product to speak of.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # Considerations for Releasing an API
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Drink Your Own Kool-Aid
+
+                Note: You should use the same API internally that you expose publicly (obviously the super special proprietary stuff should be gated for internal use only). Keeping the public and private APIs unified makes for easier maintenance and ensures consistency. It also avoids neglecting the public-facing API when things get busy.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Be RESTful
+
+                Note: The API should probably be RESTful. That&rsquo;s the current standard, and it makes adoption easier for everyone.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Follow the Rules
+
+                Note: Building a RESTful API requires some forethought and solid architecture. Don&rsquo;t cut corners here or you WILL regret it in the future.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Believe in the Power of Good Docs
+
+                Note: Writing good documentation is as important as building a good service. Without good docs, adoption will crawl, and the benefits evaporate. See: PHP docs, jQuery docs, Heroku docs, Stripe docs — good docs increase adoption and lower the amount of support headaches immensely.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Trust Your Developer Community
+
+                Note: Don&rsquo;t be weird about usage. Set clear guidelines for acceptable use, but don&rsquo;t be unnecessarily strict. Nobody likes a black box; I&rsquo;m looking at you, App Store approval process.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # Recap
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Use Third-Party Services 
+
+                * You can add more features faster <!-- .element: class="fragment" -->
+                * You will save time &amp; money <!-- .element: class="fragment" -->
+                * The trade-offs are negligible <!-- .element: class="fragment" -->
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                ## Open an API for Your Service
+
+                * You can increase adoption <!-- .element: class="fragment" -->
+                * You can identify new use cases <!-- .element: class="fragment" -->
+                * You can create bonus revenue <!-- .element: class="fragment" -->
+
+                Note: All of this leads to...
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="url(img/scrooge-mcduck.gif)" -->
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # Questions?
+
+                Note: Don&rsquo;t stick on this slide. Go to the next one.
+            </script>
+        </section>
+
+        <section data-markdown>
+            <script type="text/template">
+                # How APIs Have Taken Over
+                ### (Even Though Your Mom&rsquo;s Never Heard of Them)
+
+                <small>Presented by [Jason Lengstorf](http://lengstorf.com) of [Copter Labs](http://www.copterlabs.com)</small>
+
+                <small>Twitter: [@jlengstorf](https://twitter.com/jlengstorf) | Email: [jason@copterlabs.com](mailto:jason@copterlabs.com)
+            </script>
+        </section>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <ul class="inline">
+        <li>&ldquo;APIs Have Taken Over&rdquo; by <a href="http://lengstorf.com">Jason Lengstorf</a></li>
+        <li><a href="https://twitter.com/jlengstorf">@jlengstorf</a></li>
+        <li><a href="https://facebook.com/jasonlengstorf">facebook.com/jasonlengstorf</a></li>
+        <li><a href="http://github.com/jlengstorf/designing-for-developers/">View this on GitHub</a></li>
+    </ul>
+</footer>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'fade',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
